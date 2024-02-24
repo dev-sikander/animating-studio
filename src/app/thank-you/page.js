@@ -4,7 +4,7 @@
 export default function Page() {
     //=====Banner Fold=====//
     const hero = {
-        title: (<> Thank You </>)
+        title: (<> Thank You </>),
     };
 
     return (

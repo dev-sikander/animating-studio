@@ -5,8 +5,8 @@ import { PopupProvider } from "./configs/store/Popup"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 //
-import Footer from "@/components/footer/Footer"
-import Header from "@/components/header/Header"
+import Footer from "@/components/Footer/Footer"
+import Header from "@/components/Header/Header"
 
 const ConditionalLayout = ({ children }) => {
     const pathname = usePathname();

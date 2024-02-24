@@ -1,5 +1,5 @@
 // Import Components
-import CTA from "@/components/cta/CTA";
+// import CTA from "@/components/cta/CTA";
 
 export default function Page() {
     //=====Banner Fold=====//
@@ -16,7 +16,7 @@ export default function Page() {
                             Thank You
                         </h1>
                         <div className="flex gap-6">
-                            <CTA
+                            {/* <CTA
                                 text="Back To Home"
                                  icon="/icons/arrow-red.png"
                                     iconCss="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-4"
@@ -25,7 +25,7 @@ export default function Page() {
                                 border={`border-2 border-[#f5090b]`}
                                 hover="hover:bg-transparent"
                                 href="/"
-                            />
+                            /> */}
                         </div>
                     </div>
                 </div>

@@ -13,8 +13,7 @@ import Extraordinary from '@/components/Extraordinary/Extraordinary'
 
 // ===== Images 
 import BranShine from "media/explainer-videos/brandshine.png"
-import SaleShine from "media/home/salesimage.png"
-import BannerImage from "media/2d-animation/banner-img.png"
+import SaleShine from "media/home/salesimage.png" 
 
 // ==== Thumnail Image
 import Thumnail1 from "media/thumbnails/2d-animation/1.jpg"

@@ -1,8 +1,8 @@
 // Import Fonts
-import { primary } from "./configs/fonts";
-// Import Components
 import ConditionalLayout from "./ConditionalLayout";
-import Script from "next/script";
+import { primary } from "./configs/fonts";
+// Import Components  
+
 // Import Css
 import "./global.css";
 // Meta Data

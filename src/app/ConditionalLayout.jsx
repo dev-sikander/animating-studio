@@ -24,16 +24,9 @@ const ConditionalLayout = ({ children }) => {
     }, [])
     return (
         <PopupProvider value={{ popup, togglePopup }}>
-            {/* {pathname !== "/video-explainer-lp" && pathname !== "/animating-studio-lp" && (
-                <Header />
-            )} */}
             <Header />
             {children}
-            {/* {pathname !== "/video-explainer-lp" && pathname !== "/animating-studio-lp" && (
-                <Footer />
-            )} */}
             <Footer />
-            {/* {pathname !== '/video-explainer-lp' && <Footer />} */}
         </PopupProvider>
     )
 }

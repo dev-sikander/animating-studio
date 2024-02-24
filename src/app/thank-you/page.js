@@ -4,7 +4,7 @@
 export default function Page() {
     //=====Banner Fold=====//
     const hero = {
-        title: (<> Thank You </>),
+        title: (<> Thank You </>)
     };
 
     return (
@@ -15,7 +15,7 @@ export default function Page() {
                         <h1 className={`text-[40px] md:text-[50px] xl:text-[60px] font-semibold font-sans tracking-wider mb-1 mt-32`}>
                             Thank You
                         </h1>
-                        <div className="flex gap-6">
+                        <div className="flex gap-6">    
                             {/* <CTA
                                 text="Back To Home"
                                  icon="/icons/arrow-red.png"

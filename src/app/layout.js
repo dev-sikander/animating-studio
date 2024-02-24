@@ -11,12 +11,12 @@ export const metadata = {
     title: "Premium Video Animation Services | Animating Studio",
     description: "Embrace the juncture and vivify your narrative through impeccable craftsmanship, alongside an all-inclusive suite of video animation and 3D animation services.",
     // Canonical
-    alternates: { canonical: 'https://animatingstudio.vercel.app/' },
+    alternates: { canonical: 'https://animating-studio.vercel.app/' },
     // OG Metas
     openGraph: {
         title: "Premium Video Animation Services | Animating Studio",
         description: "Embrace the juncture and vivify your narrative through impeccable craftsmanship, alongside an all-inclusive suite of video animation and 3D animation services.",
-        url: 'https://animatingstudio.vercel.app/',
+        url: 'https://animating-studio.vercel.app/',
         siteName: 'Animating Studio',
         locale: 'en_US',
         type: 'website',

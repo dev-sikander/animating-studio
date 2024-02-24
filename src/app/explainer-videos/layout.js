@@ -4,12 +4,12 @@ export const metadata = {
     title: "Explainer Videos - Animation Studio",
     description: "Explainer Videos - Animation Studio",
     // Canonical
-    alternates: { canonical: 'https://infinity-animation.vercel.app/2d-animation' },
+    alternates: { canonical: 'https://animating-studio.vercel.app/explainer-videos' },
     // OG Metas
     openGraph: {
         title: 'Explainer Videos - Animation Studio',
         description: 'Explainer Videos - Animation Studio',
-        url: 'https://infinity-animation.vercel.app/2d-animation',
+        url: 'https://animating-studio.vercel.app/explainer-videos',
         siteName: 'Animating Studio',
         locale: 'en_US',
         type: 'website',

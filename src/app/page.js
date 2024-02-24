@@ -1,7 +1,6 @@
 "use client"
 
 import React from 'react'
-import Header from '@/components/Header/Header'
 import Banner from '@/components/Banner/Banner'
 import Form from '@/components/form/Form'
 import Bussiness from '@/components/Bussiness/Bussiness'
@@ -12,8 +11,6 @@ import Brand from '@/components/BrandShine/Brand'
 import Remarkable from '@/components/Remarkable/Remarkable'
 import OurClient from '@/components/ourClient/OurClient'
 import Extraordinary from '@/components/Extraordinary/Extraordinary'
-import Footer from '@/components/Footer/Footer'
-
 
 // ===== Images 
 import BranShine from "media/home/brandshine.png"

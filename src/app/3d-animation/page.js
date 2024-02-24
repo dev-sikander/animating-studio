@@ -14,9 +14,7 @@ import Extraordinary from '@/components/Extraordinary/Extraordinary'
 
 // ===== Images 
 import BranShine from "media/3d-animation/brandshine.png"
-import SaleShine from "media/home/salesimage.png"
-import BannerImage from "media/2d-animation/banner-img.png"
-import AnimationImage from "media/2d-animation/animations.png"
+import SaleShine from "media/home/salesimage.png" 
 
 // ==== Thumnail Image
 import Thumnail1 from "media/thumbnails/2d-animation/1.jpg"

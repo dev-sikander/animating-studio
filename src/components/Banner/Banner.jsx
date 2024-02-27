@@ -41,7 +41,7 @@ const Banner = () => {
                     <div className="video w-full lg:w-6/12 mx-auto">
                         {banVideo.map((item, index) => (
                             <div key={index}>
-                                <video className={`rounded-2xl shadow-2xl w-full h-full`} muted="muted" autoPlay src={item}></video>
+                                <video className={`rounded-2xl shadow-2xl w-full h-full`} muted="muted" autoPlay={true} src={item}></video>
                             </div>
                         ))}
                     </div>

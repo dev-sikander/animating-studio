@@ -27,7 +27,7 @@ const Assisted = () => {
                         <div className="col-span-12 lg:col-span-5">
                             {banVideo.map((item, index) => (
                                 <div key={index}>
-                                    <video className='lg:absolute right-0 h-full top-0' muted="muted" autoPlay src={item}></video>
+                                    <video className='lg:absolute right-0 h-full top-0' loop={true} muted="muted" autoPlay src={item}></video>
                                 </div>
                             ))}
                         </div>

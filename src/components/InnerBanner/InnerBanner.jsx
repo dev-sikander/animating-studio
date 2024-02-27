@@ -47,7 +47,8 @@ const InnerBanner = ({ content }) => {
                             </div>
                         </div>
                         <div className="col-span-12 md:col-span-6">
-                            <video src={bannerImage} autoPlay={true} loop={true} muted={true} className='w-full h-full'></video> 
+                            <video src={bannerImage} autoPlay={true} loop={true} muted={true} className='w-full h-full'>
+                            </video>
                         </div>
                     </div>
                 </div>

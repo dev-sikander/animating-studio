@@ -71,7 +71,7 @@ const page = () => {
     para: <></>,
     list: lists,
     isList: true,
-    bannerImage: "https://download-video.akamaized.net/v3-1/playback/98bb75dc-eaaf-4bbe-8d7a-c52a0c954c5d/3b0d3579?__token__=st=1708987185~exp=1709001585~acl=%2Fv3-1%2Fplayback%2F98bb75dc-eaaf-4bbe-8d7a-c52a0c954c5d%2F3b0d3579%2A~hmac=03488aed1f4674e082b3b167f778c7b7fee9827de63531ffad34ba4814dc8ec9&r=dXMtZWFzdDE%3D",
+    bannerImage: "https://download-video.akamaized.net/v3-1/playback/98bb75dc-eaaf-4bbe-8d7a-c52a0c954c5d/3b0d3579?__token__=st=1709055407~exp=1709069807~acl=%2Fv3-1%2Fplayback%2F98bb75dc-eaaf-4bbe-8d7a-c52a0c954c5d%2F3b0d3579%2A~hmac=c21f28a71de699cdbb86224f994f77623a872d140efea4bc96b27ecc38adcbff&r=dXMtZWFzdDE%3D",
   }
 
   //==== Animations Sections =====//

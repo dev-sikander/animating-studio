@@ -20,7 +20,7 @@ const Banner = () => {
         <>
             <section className='py-[30px] md:py-[70px] relative'>
                 <Image src={PartiTwo} alt='Particle' height={625} width={517} className='animation absolute right-0 bottom-[-38px] w-4/12 lg:block hidden' />
-                <Image src={PartiFour} alt='Particle' className=' absolute right-0 bottom-[-45%] w-[9%] lg:block hidden' />
+                <Image src={PartiFour} alt='Particle' className=' absolute right-0 bottom-[-45%] lg:bottom-0 w-[9%] lg:block hidden' />
                 <div className="px-5 lg:max-w-7xl mx-auto relative">
                     <Image src={PartiOne} alt='Particle One' className='animationUpDown absolute left-[40px] bottom-[-70px] w-[23%] z-20 lg:block hidden' />
                     <div className="flex items-center justify-center" data-aos="zoom-in" data-wow-duration="3s">
@@ -46,7 +46,7 @@ const Banner = () => {
                         ))}
                     </div>
                 </div>
-                <Image src={PartiThree} alt='Particle' className='absolute left-0 bottom-[-28%] w-[7%] lg:block hidden' />
+                <Image src={PartiThree} alt='Particle' className='absolute left-0 bottom-[-28%] lg:bottom-[-11%] w-[7%] lg:block hidden' />
             </section>
         </>
     )

@@ -62,17 +62,17 @@ const Remarkable = ({ content }) => {
                             </div>
                         </div>
                         {isHomePage ?
-                            <div className='grid grid-cols-12'>
+                            <div className='grid grid-cols-12 mt-5'>
                                 <div className="col-span-7">
                                     <div className="card bg-[#F4F4F4] rounded-[15px] px-7 py-10 h-full">
-                                        <h4 className='text-[25px] font-bold font-sans text-black leading-[60px]'>{cardFive.cardtitle}</h4>ff
+                                        <h4 className='text-[25px] font-bold font-sans text-black leading-[60px]'>{cardFive.cardtitle}</h4>
                                         <p className='text-[16px] text-black font-sans leading-[21px] mb-7'>{cardFive.cardpara}</p>
                                         <Image src={cardFive.cardImage} alt='remark' className='mb-[-45px] mx-auto' />
                                     </div>
                                 </div>
                                 <div className="col-span-5">
                                     <div className="card bg-gradient-to-t from-[#FFAB4A] to-[#FF8E0A] rounded-[15px] px-7 py-10 relative h-full">
-                                        <h4 className='text-[25px] font-bold font-sans text-white leading-tight lg:leading-[60px]'>{cardSix.cardtitle}</h4>ff
+                                        <h4 className='text-[25px] font-bold font-sans text-white leading-tight lg:leading-[60px]'>{cardSix.cardtitle}</h4>
                                         <p className='text-[16px] text-white font-sans leading-[21px] mb-4'>{cardSix.cardpara}</p>
                                         <Image src={cardSix.cardImage} alt='remark' className='animationUpDown2 w-full absolute right-0 lg:right-[-17px] xl:right-[-25px] bottom-[18px]  max-h-[350px] min-w-[100%] lg:min-w-[570px] xl:min-w-[550px]' />
                                     </div>
@@ -81,25 +81,25 @@ const Remarkable = ({ content }) => {
                         }
                         {isHomePage ?
                             <div className='grid grid-cols-12 gap-5 mt-5'>
-                                <div className="col-span-4">
-                                    <div className="card bg-gradient-to-t from-[#AA00FE] to-[#6B00FE] rounded-[15px] px-7 py-10 relative h-full min-h-[580px]">
+                                <div className="col-span-12 md:col-span-5 lg:col-span-4">
+                                    <div className="card bg-gradient-to-t from-[#AA00FE] to-[#6B00FE] rounded-[15px] px-7 py-10 relative h-full min-h-[535px] lg:min-h-[580px]">
                                         <h4 className='text-[25px] font-bold font-sans text-white leading-tight lg:leading-[60px]'>{cardSeven.cardtitle}</h4>
                                         <p className='text-[16px] text-white font-sans leading-[21px] mb-4'>{cardSeven.cardpara}</p>
                                         <Image src={cardSeven.cardImage} alt='remark' className='animationUpDown2 w-8/12 mx-auto absolute left-0 right-0 bottom-[-16px]' />
                                     </div>
                                 </div>
-                                <div className="col-span-4">
-                                    <div className="card bg-gradient-to-t from-[#0E80FC] to-[#058EF8] rounded-[15px] px-7 py-10 relative h-full min-h-[580px]">
+                                <div className="col-span-12 md:col-span-7 lg:col-span-4">
+                                    <div className="card bg-gradient-to-t from-[#0E80FC] to-[#058EF8] rounded-[15px] px-7 py-10 relative h-full min-h-[535px] lg:min-h-[580px]">
                                         <h4 className='text-[25px] font-bold font-sans text-white leading-tight lg:leading-[60px]'>{cardEight.cardtitle}</h4>
                                         <p className='text-[16px] text-white font-sans leading-[21px] mb-4'>{cardEight.cardpara}</p>
                                         <Image src={cardEight.cardImage} alt='remark' className='w-10/12 absolute right-[15px] bottom-[5px]' />
                                     </div>
                                 </div>
-                                <div className="col-span-4">
-                                    <div className="card bg-gradient-to-t from-[#FF2D4B] to-[#F71017] rounded-[15px] px-7 py-10 relative h-full min-h-[580px]">
+                                <div className="col-span-12 lg:col-span-4">
+                                    <div className="card bg-gradient-to-t from-[#FF2D4B] to-[#F71017] rounded-[15px] px-7 py-10 relative h-full min-h-[535px] lg:min-h-[580px]">
                                         <h4 className='text-[25px] font-bold font-sans text-white leading-tight lg:leading-[60px]'>{cardNine.cardtitle}</h4>
                                         <p className='text-[16px] text-white font-sans leading-[21px] mb-4'>{cardNine.cardpara}</p>
-                                        <Image src={cardNine.cardImage} alt='remark' className='animationUpDown2 w-10/12 absolute left-[35px] bottom-[-20px]' />
+                                        <Image src={cardNine.cardImage} alt='remark' className='animationUpDown2 \w-7/12 lg:w-10/12 absolute left-[50%] lg:left-[35px] bottom-[-20px] mx-auto' />
                                     </div>
                                 </div>
                             </div> :

@@ -10,6 +10,9 @@ import lottie from 'lottie-web';
 import AnimationOne from "media/extraordinary-one.json"
 import AnimationTwo from "media/extraordinary-two.json"
 
+import Animation from 'media/home/animation-one.gif'
+import Image from 'next/image';
+
 const Extraordinary = () => {
     const animeOne = useRef(null);
     const animeTwo = useRef(null);
@@ -61,7 +64,7 @@ const Extraordinary = () => {
 
     return (
         <>
-            <section className='pt-[30px] md:pt-[70px] relative lg:h-[100vh]'>
+            <section className='pt-[30px] md:pt-[70px] relative xl:h-[100vh]'>
                 <div className="px-5 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12">
                         <div className="col-span-12">
@@ -74,9 +77,12 @@ const Extraordinary = () => {
                                 <div className="btns">
                                     <Link class="text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] w-[318px] md:w-[214px] h-[44px] shadow-2xl poppins flex items-center justify-center" href="javascript:;">Live Chat</Link>
                                 </div>
-                                <div className="flex items-center gap-x-4">
-                                    <div id="animationTwo" className='lg:absolute bottom-0 lg:bottom-[-54px] 2xl:bottom-[-30px] left-[70px] max-w-[170px] md:max-w-[400px] xl:max-w-[500px] 2xl:max-w-[600px]'></div>
-                                    <div id="animationOne" className='max-w-[500px] 2xl:max-w-full lg:absolute top-[50%] xl:top-[31%] 2xl:top-[31%] 3xl:top-[50%] right-[40px]'></div>
+                                <div className="flex items-center justify-between gap-x-4">
+                                    <div id="animationTwo" className='max-w-[170px] md:max-w-[400px] lg:max-w-[500px] 2xl:max-w-[600px] lg:mt-[55px]'></div>
+                                    {/* <div className='max-w-[500px] 2xl:max-w-full mt-[55px]'>
+                                        <Image src={Animation} alt='Animating Studio' />
+                                    </div> */}
+                                    <div id="animationOne" className='max-w-[500px] 2xl:max-w-full mt-[55px]'></div>
                                 </div>
                                 {/* <Image src={Animation} alt='Animation Studio' className='w-11/12 mx-auto' /> */}
                             </div>

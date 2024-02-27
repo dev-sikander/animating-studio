@@ -54,6 +54,7 @@ import Remark11 from "media/home/remark11.png"
 import Remark12 from "media/home/remark12.png"
 import Remark13 from "media/home/remark13.png"
 import Remark14 from "media/home/remark14.png"
+import Bussiness from '@/components/Bussiness/Bussiness'
 
 
 const page = () => {
@@ -72,7 +73,7 @@ const page = () => {
     para: <>Experience the magic of animation with Animating Studio. Where dreams unfold, and creativity takes flight. Unleash the extraordinary in every frame.</>,
     list: lists,
     isList: false,
-    bannerImage: "https://download-video.akamaized.net/v3-1/playback/c04d5ed4-ee0e-4c0c-bdc0-177ee785116a/3f4e5013-fe269957?__token__=st=1708734006~exp=1708748406~acl=%2Fv3-1%2Fplayback%2Fc04d5ed4-ee0e-4c0c-bdc0-177ee785116a%2F3f4e5013-fe269957%2A~hmac=2e2f08e1e08493cdf9c00b374958765eb8b40dc39d95199de3d1b816c0ed5dbd&r=dXMtY2VudHJhbDE%3D",
+    bannerImage: "https://download-video.akamaized.net/v3-1/playback/c04d5ed4-ee0e-4c0c-bdc0-177ee785116a/3f4e5013-fe269957?__token__=st=1708994133~exp=1709008533~acl=%2Fv3-1%2Fplayback%2Fc04d5ed4-ee0e-4c0c-bdc0-177ee785116a%2F3f4e5013-fe269957%2A~hmac=1a436456ad720d4ec14091f21318bbbdac37246c6730f6d1c28642703f057e32&r=dXMtY2VudHJhbDE%3D",
   }
 
   //==== Animations Sections =====//
@@ -82,7 +83,7 @@ const page = () => {
     subtitleOne: <>Professional Animated Video</>,
     subtitleTwo: <>Services For Diverse Businesses</>,
     subpara: <>Animated videos are a great way to fascinate your viewers with rich, intriguing, and playful scenes. It is evaluated according to a study that animations videos can boost your company sales upto around 49%. Our animation studio offers you the interactive, innovative approach to motion pictures creation in the 2D format in tight deadline terms and affordable prices. We are proud to have served top-notch names in the industry with our service.</>,
-    AnimationVideo: "https://download-video.akamaized.net/v3-1/playback/b86761e7-19b4-44ae-b89b-31bc82632a51/65900160-39b329bf?__token__=st=1708734003~exp=1708748403~acl=%2Fv3-1%2Fplayback%2Fb86761e7-19b4-44ae-b89b-31bc82632a51%2F65900160-39b329bf%2A~hmac=f46f64a4c254b53c3a369ecc24fad0ba7e43998084128e1317a5b980fed9ec74&r=dXMtd2VzdDE%3D",
+    AnimationVideo: "https://download-video.akamaized.net/v3-1/playback/b86761e7-19b4-44ae-b89b-31bc82632a51/65900160-39b329bf?__token__=st=1708994230~exp=1709008630~acl=%2Fv3-1%2Fplayback%2Fb86761e7-19b4-44ae-b89b-31bc82632a51%2F65900160-39b329bf%2A~hmac=006228915db24f66187707d284b6b499743d9e4e4d12fcd5c95d756ece1c219f&r=dXMtd2VzdDE%3D",
   }
 
   //=====Portfilio Fold=====// 

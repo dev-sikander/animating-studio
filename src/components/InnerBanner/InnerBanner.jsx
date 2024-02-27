@@ -16,7 +16,7 @@ const InnerBanner = ({ content }) => {
     return (
         <>
             <section className='py-[30px] md:py-[70px]'>
-                <Image src={PartiOne} alt='Particle' className=' absolute right-0 bottom-[-45%] w-[9%] lg:block hidden' />
+                <Image src={PartiOne} alt='Particle' className=' absolute right-0 bottom-[-45%] xxl:bottom-0 w-[9%] xl:w-[10%] xxl:w-[19%] lg:block hidden' />
                 <div className="px-5 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 items-center gap-y-5">
                         <div className="col-span-12 md:col-span-6">
@@ -47,12 +47,11 @@ const InnerBanner = ({ content }) => {
                             </div>
                         </div>
                         <div className="col-span-12 md:col-span-6">
-                            <video src={bannerImage} autoPlay={true} controls={false} muted={true} className='w-full h-full'></video>
-                            {/* <Image src={bannerImage} alt='Animation Studio' /> */}
+                            <video src={bannerImage} autoPlay={true} loop={true} muted={true} className='w-full h-full'></video> 
                         </div>
                     </div>
                 </div>
-                <Image src={PartiTwo} alt='Particle' className='absolute left-0 bottom-[-28%] w-[7%] lg:block hidden' />
+                <Image src={PartiTwo} alt='Particle' className='absolute left-0 bottom-[-28%] xxl:bottom-[-10%] w-[10%] xxl:w-[13%] lg:block hidden' />
             </section>
         </>
     )

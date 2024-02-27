@@ -7,6 +7,9 @@ import Review2 from "media/home/review2.png"
 import Review3 from "media/home/review3.png"
 import { Star } from 'heroicons-react'
 
+// Images 
+import HandAnimation from "media/animations/hand-animation.gif"
+
 const Form = () => {
     return (
         <>
@@ -26,7 +29,10 @@ const Form = () => {
                                 <div className="email">
                                     <input type="email" placeholder='Email' className='bg-white shadow-sm shadow-white rounded-[5px] h-[45px] text-center font-sans w-full lg:w-[285px] focus:outline-none text-black mb-[15px] lg:mb-0' />
                                 </div>
-                                <button className='w-full lg:w-[285px] h-[45px] bg-gradient-to-r from-[#363636] to-[#000000] poppins rounded-[5px] font-semibold text-white'>Claim</button>
+                                <button className='w-full lg:w-[285px] h-[45px] bg-gradient-to-r from-[#363636] to-[#000000] poppins rounded-[5px] font-semibold text-white relative'>
+                                    <Image src={HandAnimation} alt='Animating Studio' className='absolute top-[-104px] left-0 right-0 mx-auto' />
+                                    <span>Claim</span>
+                                </button>
                             </div>
                         </form>
                     </div>

@@ -14,7 +14,7 @@ import Extraordinary from '@/components/Extraordinary/Extraordinary'
 
 // ===== Images 
 import BranShine from "media/3d-animation/brandshine.png"
-import SaleShine from "media/home/salesimage.png" 
+import SaleShine from "media/home/salesimage.png"
 
 // ==== Thumnail Image
 import Thumnail1 from "media/thumbnails/2d-animation/1.jpg"
@@ -71,7 +71,7 @@ const page = () => {
     para: <></>,
     list: lists,
     isList: true,
-    bannerImage: "https://download-video.akamaized.net/v3-1/playback/b7d67e71-2445-4baa-93d6-b2d0686b4db8/22d9d24e?__token__=st=1708733844~exp=1708748244~acl=%2Fv3-1%2Fplayback%2Fb7d67e71-2445-4baa-93d6-b2d0686b4db8%2F22d9d24e%2A~hmac=20a3b2f9e24707dd2fc441c5d54f4e8dd9092b3d38efca8511cd8e2eddfc7424&r=dXMtZWFzdDE%3D",
+    bannerImage: "https://download-video.akamaized.net/v3-1/playback/b7d67e71-2445-4baa-93d6-b2d0686b4db8/22d9d24e?__token__=st=1708990403~exp=1709004803~acl=%2Fv3-1%2Fplayback%2Fb7d67e71-2445-4baa-93d6-b2d0686b4db8%2F22d9d24e%2A~hmac=f0ae2124af5ed9bb46ccdb144862f70e340c81d65694ac1f2c7e3f7ff669f8a0&r=dXMtZWFzdDE%3D",
   }
 
   //==== Animations Sections =====//
@@ -240,7 +240,7 @@ const page = () => {
     desc: "At Animating Studio we exhibit professionalism through our animated videos, we deliver to our prestigious clients. Our Videos bring interest and spirit to your subject. Our animators create and present even the most complicated concepts in the simplest way possible. At Animating Studio we take care of every feature of your corporate identity. We assure you that we will make use of every latest and related method to develop and improve your corporate identity in the market with our best video service.",
     branImage: BranShine,
     isBranImage: true,
-    css: "lg:min-h-[350px] xl:w-10/12 animationUpDown",
+    css: "lg:min-h-[350px] lg:w-10/12 animationUpDown",
     positionCss: "absolute top-[-43px] right-[-15px] lg:top-[-104px] lg:right-[-20px]",
     btnTxt: "Make An Animation     +"
   }

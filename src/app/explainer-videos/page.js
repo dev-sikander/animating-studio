@@ -13,7 +13,7 @@ import Extraordinary from '@/components/Extraordinary/Extraordinary'
 
 // ===== Images 
 import BranShine from "media/explainer-videos/brandshine.png"
-import SaleShine from "media/home/salesimage.png" 
+import SaleShine from "media/home/salesimage.png"
 
 // ==== Thumnail Image
 import Thumnail1 from "media/thumbnails/2d-animation/1.jpg"
@@ -71,7 +71,7 @@ const page = () => {
     para: <></>,
     list: lists,
     isList: true,
-    bannerImage: "https://download-video.akamaized.net/v3-1/playback/5d9ff686-f3fc-4f13-91c0-506225a9032a/b7a3ba47-48accd50?__token__=st=1708729672~exp=1708744072~acl=%2Fv3-1%2Fplayback%2F5d9ff686-f3fc-4f13-91c0-506225a9032a%2Fb7a3ba47-48accd50%2A~hmac=3b93e0023ca6e86a906af9af083162b987864523d2763d526423a3add6dd5567&r=dXMtd2VzdDE%3D",
+    bannerImage: "https://download-video.akamaized.net/v3-1/playback/5d9ff686-f3fc-4f13-91c0-506225a9032a/b7a3ba47-48accd50?__token__=st=1708994408~exp=1709008808~acl=%2Fv3-1%2Fplayback%2F5d9ff686-f3fc-4f13-91c0-506225a9032a%2Fb7a3ba47-48accd50%2A~hmac=7e585a5bc4d818b3fd83b80d04718ac55f744fd599058d38c19f7f48caddce3f&r=dXMtd2VzdDE%3D",
   }
 
   //==== Animations Sections =====//

@@ -46,7 +46,7 @@ const OurClient = () => {
 
     return (
         <>
-            <section className="py-[30px] md:py-[70px] bg-[#FF2D4B] relative sm:before:absolute sm:before:content-[''] sm:before:h-full sm:before:w-[111px] 3xl:before:w-[145px] sm:before:right-0 sm:before:top-0 lg:before:bg-[#ff2d4c73] sm:before:z-50 md:h-[70vh] lg:h-full">
+            <section className="py-[30px] md:py-[70px] bg-[#FF2D4B] relative sm:before:absolute sm:before:content-[''] sm:before:h-full sm:before:w-[111px] 3xl:before:w-[145px] sm:before:right-0 sm:before:top-0 lg:before:bg-[#ff2d4c73] sm:before:z-50 lg:h-full">
                 <div className="px-5 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 items-center">
                         <div className="col-span-12">
@@ -57,7 +57,7 @@ const OurClient = () => {
                             <Image src={ClientImage} alt='Clients' className='mt-[-57px] lg:mt-0 lg:mb-[-70px] lg:block hidden' />
                         </div>
                         <div className="col-span-12 lg:col-span-4">
-                            <Slider {...ClientSlider} className='clientSlider lg:w-7/12 xl:w-5/12 bottom-[7%] md:bottom-[33%] lg:bottom-[19%] right-0'>
+                            <Slider {...ClientSlider} className='clientSlider lg:w-7/12 xl:w-5/12 bottom-[7%] md:bottom-[33%] lg:bottom-[19%] right-0 mt-[25px] lg:mt-0'>
                                 <div className="slide px-4 lg:px-12">
                                     <div className="client">
                                         <Image src={Client1} width={69} height={69} alt='Clients' />

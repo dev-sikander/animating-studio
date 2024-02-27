@@ -15,7 +15,7 @@ const Form = () => {
         <>
             <section className={`lg:pt-[70px]`}>
                 <div className="px-5 lg:max-w-7xl mx-auto">
-                    <div className="form bg-[#F5090B] rounded-xl px-6 py-4">
+                    <div className="form bg-[#F5090B] rounded-xl px-4 md:px-6 py-4">
                         <h2 className='text-[18px] md:text-[25px] font-sans font-bold leading-[25px] md:leading-[60px] text-white'>🔥 Special Offer on Video Animation and So Much More! </h2>
                         <p className='text-[13px] md:text-[16px] lg:text-[18px] font-sans text-white'>🌟 Embrace this juncture and vivify your narrative through impeccable craftsmanship, alongside an all-inclusive suite of <br /> video animation and 3D animation services.</p>
                         <form action="javascript:;" className='pt-5'>
@@ -30,7 +30,7 @@ const Form = () => {
                                     <input type="email" placeholder='Email' className='bg-white shadow-sm shadow-white rounded-[5px] h-[45px] text-center font-sans w-full lg:w-[285px] focus:outline-none text-black mb-[15px] lg:mb-0' />
                                 </div>
                                 <button className='w-full lg:w-[285px] h-[45px] bg-gradient-to-r from-[#363636] to-[#000000] poppins rounded-[5px] font-semibold text-white relative'>
-                                    <Image src={HandAnimation} alt='Animating Studio' className='absolute top-[-104px] left-0 right-0 mx-auto' />
+                                    <Image src={HandAnimation} alt='Animating Studio' className='absolute top-[-104px] left-0 right-0 mx-auto lg:block hidden' />
                                     <span>Claim</span>
                                 </button>
                             </div>

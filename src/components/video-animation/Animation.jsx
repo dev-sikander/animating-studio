@@ -59,7 +59,7 @@ const Animation = () => {
                         className="mySwiper" >
                         <SwiperSlide className='relative pt-4'>
                             <Image src={Slide1} alt='Slide' className='rounded-[30px] w-full relative top-0 left-0' />
-                            <div className="absolute bottom-[2px] left-0 w-full h-[93%] xl:h-[96%] 3xl:h-[97%] flex items-start justify-end flex-col bg-black/40 rounded-[30px] px-[40px] pb-[40px]">
+                            <div className="absolute bottom-[2px] left-0 w-full h-[96%] 3xl:h-[97%] flex items-start justify-end flex-col bg-black/40 rounded-[30px] px-[40px] pb-[40px]">
                                 <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Video Animation Services</h3>
                                 <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>We can add that vividness, vibrancy, and a strong taste of zestfulness to those mundane corporate videos, making your brand truly stand out.</p>
 
@@ -71,7 +71,7 @@ const Animation = () => {
                         </SwiperSlide>
                         <SwiperSlide className='relative pt-4'>
                             <Image src={Slide2} alt='Slide' className='rounded-[30px] w-full relative top-0 left-0' />
-                            <div className="absolute bottom-[2px] left-0 w-full h-[93%] xl:h-[96%] 3xl:h-[97%] flex items-start justify-end flex-col bg-black/40 rounded-[30px] px-[40px] pb-[40px]">
+                            <div className="absolute bottom-[2px] left-0 w-full h-[96%] 3xl:h-[97%] flex items-start justify-end flex-col bg-black/40 rounded-[30px] px-[40px] pb-[40px]">
                                 <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Explainer Videos Services</h3>
                                 <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>We like to explain things, but it’s not just that…we want your audience to enjoy the seeing and listening experience as well with our explainer videos.</p>
 
@@ -83,7 +83,7 @@ const Animation = () => {
                         </SwiperSlide>
                         <SwiperSlide className='relative pt-4'>
                             <Image src={Slide3} alt='Slide' className='rounded-[30px] w-full relative top-0 left-0' />
-                            <div className="absolute bottom-[2px] left-0 w-full h-[93%] xl:h-[96%] 3xl:h-[97%] flex items-start justify-end flex-col bg-black/40 rounded-[30px] px-[40px] pb-[40px]">
+                            <div className="absolute bottom-[2px] left-0 w-full h-[96%] 3xl:h-[97%] flex items-start justify-end flex-col bg-black/40 rounded-[30px] px-[40px] pb-[40px]">
                                 <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Whiteboard Animation Services</h3>
                                 <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>A whiteboard is a wonderful blank space to start or unleash creativity. Well, truth be told, we don’t view a whiteboard as a whiteboard, we view it as a canvas that can be splendidly colored.</p>
 
@@ -95,7 +95,7 @@ const Animation = () => {
                         </SwiperSlide>
                         <SwiperSlide className='relative pt-4'>
                             <Image src={Slide1} alt='Slide' className='rounded-[30px] w-full relative top-0 left-0' />
-                            <div className="absolute bottom-[2px] left-0 w-full h-[93%] xl:h-[96%] 3xl:h-[97%] flex items-start justify-end flex-col bg-black/40 rounded-[30px] px-[40px] pb-[40px]">
+                            <div className="absolute bottom-[2px] left-0 w-full h-[96%] 3xl:h-[97%] flex items-start justify-end flex-col bg-black/40 rounded-[30px] px-[40px] pb-[40px]">
                                 <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Video Animation Services</h3>
                                 <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>We can add that vividness, vibrancy, and a strong taste of zestfulness to those mundane corporate videos, making your brand truly stand out.</p>
 
@@ -107,7 +107,7 @@ const Animation = () => {
                         </SwiperSlide>
                         <SwiperSlide className='relative pt-4'>
                             <Image src={Slide2} alt='Slide' className='rounded-[30px] w-full relative top-0 left-0' />
-                            <div className="absolute bottom-[2px] left-0 w-full h-[93%] xl:h-[96%] 3xl:h-[97%] flex items-start justify-end flex-col bg-black/40 rounded-[30px] px-[40px] pb-[40px]">
+                            <div className="absolute bottom-[2px] left-0 w-full h-[96%] 3xl:h-[97%] flex items-start justify-end flex-col bg-black/40 rounded-[30px] px-[40px] pb-[40px]">
                                 <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Explainer Videos Services</h3>
                                 <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>We like to explain things, but it’s not just that…we want your audience to enjoy the seeing and listening experience as well with our explainer videos.</p>
 
@@ -119,7 +119,7 @@ const Animation = () => {
                         </SwiperSlide>
                         <SwiperSlide className='relative pt-4'>
                             <Image src={Slide3} alt='Slide' className='rounded-[30px] w-full relative top-0 left-0' />
-                            <div className="absolute bottom-[2px] left-0 w-full h-[93%] xl:h-[96%] 3xl:h-[97%] flex items-start justify-end flex-col bg-black/40 rounded-[30px] px-[40px] pb-[40px]">
+                            <div className="absolute bottom-[2px] left-0 w-full h-[96%] 3xl:h-[97%] flex items-start justify-end flex-col bg-black/40 rounded-[30px] px-[40px] pb-[40px]">
                                 <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Whiteboard Animation Services</h3>
                                 <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>A whiteboard is a wonderful blank space to start or unleash creativity. Well, truth be told, we don’t view a whiteboard as a whiteboard, we view it as a canvas that can be splendidly colored.</p>
 

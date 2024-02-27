@@ -30,7 +30,7 @@ const OurClient = () => {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 1.3,
+                    slidesToShow: 2,
                     arrows: false,
                 }
             },

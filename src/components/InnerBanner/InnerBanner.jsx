@@ -15,18 +15,18 @@ const InnerBanner = ({ content }) => {
     const { title, para, list, bannerImage, isList } = content
     return (
         <>
-            <section className='py-[30px] md:py-[70px]'>
+            <section className='pb-[30px] md:pb-[70px]'>
                 <Image src={PartiOne} alt='Particle' className=' absolute right-0 bottom-[-45%] xxl:bottom-0 w-[9%] xl:w-[10%] xxl:w-[19%] lg:block hidden' />
                 <div className="px-5 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 items-center gap-y-5">
                         <div className="col-span-12 md:col-span-6">
                             <div className="txt">
-                                <h1 className='text-[30px] sm:text-[35px] lg:text-[45px] font-bold text-black font-sans leading-[35px] sm:leading-[45px] lg:leading-[50px] pt-2 md:pt-4 pb-2 md:pb-5 lg:w-11/12'>
+                                <h1 className='text-[30px] sm:text-[35px] lg:text-[45px] font-bold text-black font-sans leading-[35px] sm:leading-[45px] lg:leading-[50px] pt-2 md:pt-4 pb-5 lg:w-11/12'>
                                     {title}
                                 </h1>
                                 {isList ? <ul className='mb-4'>
                                     {list.map((item, index) => (
-                                        <li key={index} className='text-[13px] sm:text-[16px] font-sans text-black leading-[19px] pb-4 lg:w-10/12'>{item}</li>
+                                        <li key={index} className='text-[13px] sm:text-[16px] font-sans text-black leading-[19px] pb-2 md:pb-4 lg:w-10/12'>{item}</li>
                                     ))}
                                 </ul> : <p className='text-[13px] sm:text-[16px] font-sans text-black leading-[19px] pb-6 lg:w-10/12'>
                                     {para}
@@ -52,7 +52,7 @@ const InnerBanner = ({ content }) => {
                         </div>
                     </div>
                 </div>
-                <Image src={PartiTwo} alt='Particle' className='absolute left-0 bottom-[-28%] xxl:bottom-[-10%] w-[10%] xxl:w-[13%] lg:block hidden' />
+                <Image src={PartiTwo} alt='Particle' className='absolute left-0 bottom-[-28%] xxl:bottom-[-10%] w-[10%] xxl:w-[13%] z-[-1] lg:block hidden' />
             </section>
         </>
     )

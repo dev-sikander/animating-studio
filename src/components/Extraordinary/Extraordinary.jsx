@@ -78,13 +78,9 @@ const Extraordinary = () => {
                                     <Link class="text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] w-[318px] md:w-[214px] h-[44px] shadow-2xl poppins flex items-center justify-center" href="javascript:;">Live Chat</Link>
                                 </div>
                                 <div className="flex items-center justify-between gap-x-4">
-                                    <div id="animationTwo" className='max-w-[170px] md:max-w-[400px] lg:max-w-[500px] 2xl:max-w-[600px] lg:mt-[55px]'></div>
-                                    {/* <div className='max-w-[500px] 2xl:max-w-full mt-[55px]'>
-                                        <Image src={Animation} alt='Animating Studio' />
-                                    </div> */}
-                                    <div id="animationOne" className='max-w-[500px] 2xl:max-w-full mt-[55px]'></div>
-                                </div>
-                                {/* <Image src={Animation} alt='Animation Studio' className='w-11/12 mx-auto' /> */}
+                                    <div id="animationTwo" className='max-w-[170px] md:max-w-[400px] lg:max-w-[500px] 2xl:max-w-[600px] lg:mt-[55px]'></div> 
+                                    <div id="animationOne" className='max-w-[500px] 2xl:max-w-full lg:mt-[55px]'></div>
+                                </div> 
                             </div>
                         </div>
                     </div>

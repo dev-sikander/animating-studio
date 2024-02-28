@@ -22,12 +22,12 @@ const Remarkable = ({ content }) => {
     };
     return (
         <>
-            <section className={isHomePage ? 'pb-[30px] lg:pb-[20px]' : 'lg:pb-0'}>
+            <section className={isHomePage ? 'lg:pb-[20px]' : 'lg:pb-0'}>
                 <div className="px-5 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-5">
                         <div className="col-span-12 mb-5">
                             <h2 className='text-[30px] sm:text-[40px] lg:text-[50px] leading-tight font-bold font-sans text-center text-black mb-3'>{title}</h2>
-                            <p className='text-[13px] lg:text-[16px] leading-[21px] font-sans text-center text-black lg:w-10/12 mx-auto mb-4 md:mb-10'>{para}</p>
+                            <p className='text-[13px] lg:text-[16px] leading-[21px] font-sans text-center text-black sm:w-10/12 mx-auto mb-4 md:mb-10'>{para}</p>
                         </div>
                     </div>
                     <div className="sm:block hidden">
@@ -50,7 +50,7 @@ const Remarkable = ({ content }) => {
                                 <div className="card bg-gradient-to-t from-[#09B7E4] to-[#19EDDA] rounded-[15px] px-5 lg:px-7 py-10 relative h-full">
                                     <h4 className='text-[25px] font-bold font-sans text-white leading-tight lg:leading-[60px]'>{cardThree.cardtitle}</h4>
                                     <p className='text-[16px] text-white font-sans leading-[21px] mb-6'>{cardThree.cardpara}</p>
-                                    <Image src={cardThree.cardImage} alt='remark' className={isHomePage ? 'w-full h-[54%] lg:h-[65%] object-contain absolute left-0 lg:left-[-65px]' : `mx-auto object-contain mt-0 lg:mt-[65px] ${cardThree.css}`} />
+                                    <Image src={cardThree.cardImage} alt='remark' className={isHomePage ? 'w-full h-[54%] lg:h-[65%] object-contain absolute left-0 xl:left-[-65px]' : `mx-auto object-contain mt-0 lg:mt-[65px] ${cardThree.css}`} />
                                 </div>
                             </div>
                             <div className="col-span-7">

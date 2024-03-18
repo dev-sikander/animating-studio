@@ -219,11 +219,11 @@ const Header = () => {
                         <Typography
                             href="/"
                             variant="h6"
-                            className="mr-4 cursor-pointer py-1.5 lg:ml-2 lg:w-[315px]"
+                            className="mr-4 cursor-pointer py-1.5 lg:ml-2 w-[195px] lg:w-[315px]"
                         >
                             <Image
                                 src={logo}
-                                className="w-[80%] md:w-auto"
+                                className="w-[60%] sm:w-[80%] md:w-auto"
                                 alt="Animating Studio"
                             />
                         </Typography>
@@ -253,9 +253,9 @@ const Header = () => {
                             <div className="">
                                 <Link
                                     href="tel:;"
-                                    className="flex items-center gap-x-3 text-primary-100 poppins font-semibold text-[15px]"
+                                    className="flex items-center gap-x-3 text-primary-100 poppins font-semibold text-[13px] sm:text-[15px]"
                                 >
-                                    <FaPhoneAlt className="text-[15px]" />
+                                    <FaPhoneAlt className="text-[15px] sm:block hidden" />
                                     123 456 7890
                                 </Link>
                             </div>

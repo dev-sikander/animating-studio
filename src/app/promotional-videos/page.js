@@ -71,7 +71,7 @@ const page = () => {
     para: <></>,
     list: lists,
     isList: true,
-    bannerImage: "https://download-video.akamaized.net/v3-1/playback/98bb75dc-eaaf-4bbe-8d7a-c52a0c954c5d/3b0d3579?__token__=st=1709055407~exp=1709069807~acl=%2Fv3-1%2Fplayback%2F98bb75dc-eaaf-4bbe-8d7a-c52a0c954c5d%2F3b0d3579%2A~hmac=c21f28a71de699cdbb86224f994f77623a872d140efea4bc96b27ecc38adcbff&r=dXMtZWFzdDE%3D",
+    bannerImage: "https://player.vimeo.com/progressive_redirect/playback/916123936/rendition/2160p/file.mp4?loc=external&log_user=0&signature=24c295b2c8335f8419c5c7601315f8870ddbfdd2f5baa61704aaacbd7445a43f",
   }
 
   //==== Animations Sections =====//

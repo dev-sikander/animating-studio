@@ -15,7 +15,7 @@ const InnerBanner = ({ content }) => {
     const { title, para, list, bannerImage, isList } = content
     return (
         <>
-            <section className='pb-[30px] md:pb-[70px]'>
+            <section className='md:pt-[80px] pb-[30px] md:pb-[70px]'>
                 <Image src={PartiOne} alt='Particle' className=' absolute right-0 bottom-[-45%] xxl:bottom-0 w-[9%] xl:w-[10%] xxl:w-[19%] lg:block hidden' />
                 <div className="px-5 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 items-center gap-y-5">

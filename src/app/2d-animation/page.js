@@ -72,7 +72,7 @@ const page = () => {
     para: <>Experience the magic of animation with Animating Studio. Where dreams unfold, and creativity takes flight. Unleash the extraordinary in every frame.</>,
     list: lists,
     isList: false,
-    bannerImage: "https://download-video.akamaized.net/v3-1/playback/c04d5ed4-ee0e-4c0c-bdc0-177ee785116a/3f4e5013-fe269957?__token__=st=1709054481~exp=1709068881~acl=%2Fv3-1%2Fplayback%2Fc04d5ed4-ee0e-4c0c-bdc0-177ee785116a%2F3f4e5013-fe269957%2A~hmac=431be14fd68d60defba0b43849ff73ab3b2e3d57406de19c5d4131ab6f2aa36e&r=dXMtY2VudHJhbDE%3D",
+    bannerImage: "https://player.vimeo.com/progressive_redirect/playback/916116973/rendition/1080p/file.mp4?loc=external&log_user=0&signature=77fdc5bd531e7ad88bc093f0ed7a0b34f0c4b24122d3d126758e255b1a15575a",
   }
 
   //==== Animations Sections =====//
@@ -82,7 +82,7 @@ const page = () => {
     subtitleOne: <>Professional Animated Video</>,
     subtitleTwo: <>Services For Diverse Businesses</>,
     subpara: <>Animated videos are a great way to fascinate your viewers with rich, intriguing, and playful scenes. It is evaluated according to a study that animations videos can boost your company sales upto around 49%. Our animation studio offers you the interactive, innovative approach to motion pictures creation in the 2D format in tight deadline terms and affordable prices. We are proud to have served top-notch names in the industry with our service.</>,
-    AnimationVideo: "https://download-video.akamaized.net/v3-1/playback/b86761e7-19b4-44ae-b89b-31bc82632a51/65900160-39b329bf?__token__=st=1709054777~exp=1709069177~acl=%2Fv3-1%2Fplayback%2Fb86761e7-19b4-44ae-b89b-31bc82632a51%2F65900160-39b329bf%2A~hmac=be797865348f2d6732a10d8d5bb33b2e129bc8adc6d24a10c1d6dc4b48acbd62&r=dXMtd2VzdDE%3D",
+    AnimationVideo: "https://player.vimeo.com/progressive_redirect/playback/916096653/rendition/1080p/file.mp4?loc=external&log_user=0&signature=2c1fbdcd7282fe2b314ed51948a2b8195b14b7d762295e12e88097ea4fc583e2",
   }
 
   //=====Portfilio Fold=====// 

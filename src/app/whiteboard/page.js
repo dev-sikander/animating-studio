@@ -14,7 +14,7 @@ import Extraordinary from '@/components/Extraordinary/Extraordinary'
 
 // ===== Images 
 import BranShine from "media/whiteboard/brandshine.png"
-import SaleShine from "media/home/salesimage.png" 
+import SaleShine from "media/home/salesimage.png"
 
 // ==== Thumnail Image
 import Thumnail1 from "media/thumbnails/2d-animation/1.jpg"
@@ -71,7 +71,7 @@ const page = () => {
     para: <></>,
     list: lists,
     isList: true,
-    bannerImage: "https://download-video.akamaized.net/v3-1/playback/ce70d91e-e450-4110-bfdf-a430989f06e3/ea6a9a28?__token__=st=1709055727~exp=1709070127~acl=%2Fv3-1%2Fplayback%2Fce70d91e-e450-4110-bfdf-a430989f06e3%2Fea6a9a28%2A~hmac=85819024e223432cedc98978f72356ae0f6705f78b47614e354d0da116b54187&r=dXMtY2VudHJhbDE%3D",
+    bannerImage: "https://player.vimeo.com/progressive_redirect/playback/916124095/rendition/2160p/file.mp4?loc=external&log_user=0&signature=3c1bc08015af185d80d4a832c1d8eba71d9380480c8de67596e97b8cae183386",
   }
 
   //==== Animations Sections =====//

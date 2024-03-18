@@ -72,8 +72,7 @@ const page = () => {
     para: <></>,
     list: lists,
     isList: true,
-    imageTrue: true,
-    bannerImage: BannerImage,
+    bannerImage: "https://player.vimeo.com/progressive_redirect/playback/924775413/rendition/240p/file.mp4?loc=external&log_user=0&signature=8ec85e9167e33fa1f6f0341d28222d54340a4a5eff496c22a01c4feb71262cb9",
   }
 
   //==== Animations Sections =====//

@@ -74,7 +74,7 @@ function MegaMenu() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
     const renderItems = megaMenuItems.map(({ icon, title, href }, key) => (
         <div key={key}>
-            <MenuItem className="flex items-center gap-3 rounded-lg mb-1 lg:mb-0">
+            <MenuItem className="flex items-center rounded-lg mb-1 lg:mb-0 pt-0">
                 <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2">
                     {" "}
                     {React.createElement(icon, {
@@ -141,7 +141,7 @@ function MegaMenu() {
                     </Link>
                 </MenuHandler>
                 <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
-                    <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
+                    <ul className="grid grid-cols-3 outline-none outline-0 py-3">
                         {renderItems}
                     </ul>
                 </MenuList>

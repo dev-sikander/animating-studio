@@ -12,7 +12,7 @@ import PartiTwo from "media/home/banner-3.png"
 // import Bannervideo from "public/2d-animation/banner-vid.mp4"
 
 const InnerBanner = ({ content }) => {
-    const { title, para, list, bannerImage, isList } = content
+    const { title, para, list, bannerImage, isList, imageTrue } = content
     return (
         <>
             <section className='md:pt-[80px] pb-[30px] md:pb-[70px]'>
@@ -47,8 +47,10 @@ const InnerBanner = ({ content }) => {
                             </div>
                         </div>
                         <div className="col-span-12 md:col-span-6">
-                            <video src={bannerImage} autoPlay={true} loop={true} muted={true} className='w-full h-full'>
-                            </video>
+                            {imageTrue ? <Image src={bannerImage} alt='Animating Studio' className='mx-auto' /> : <video src={bannerImage} autoPlay={true} loop={true} muted={true} className='w-full h-full'>
+                            </video>}
+
+
                         </div>
                     </div>
                 </div>

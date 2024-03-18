@@ -15,6 +15,7 @@ import Extraordinary from '@/components/Extraordinary/Extraordinary'
 // ===== Images 
 import BranShine from "media/3d-animation/brandshine.png"
 import SaleShine from "media/home/salesimage.png"
+import BannerImage from "media/3d-animation/3d-banner.png"
 
 // ==== Thumnail Image
 import Thumnail1 from "media/thumbnails/2d-animation/1.jpg"
@@ -71,7 +72,8 @@ const page = () => {
     para: <></>,
     list: lists,
     isList: true,
-    bannerImage: "https://player.vimeo.com/progressive_redirect/playback/916117152/rendition/480p/file.mp4?loc=external&log_user=0&signature=758213d31905bbcd7048102966fbd44feb351d6500bd3d373829b98b2ee4beff",
+    imageTrue: true,
+    bannerImage: BannerImage,
   }
 
   //==== Animations Sections =====//

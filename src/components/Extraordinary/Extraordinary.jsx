@@ -2,69 +2,16 @@
 
 import Link from 'next/link'
 import React from 'react'
-//
-import { useEffect, useRef } from "react";
-
-import lottie from 'lottie-web';
-
-import AnimationOne from "media/extraordinary-one.json"
-import AnimationTwo from "media/extraordinary-two.json"
-
-import Animation from 'media/home/animation-one.gif'
+// 
+import AnimationOne from "media/extraordinary-two.gif"
+import AnimationTwo from "media/extraordinary-one.gif"
 import Image from 'next/image';
 
 const Extraordinary = () => {
-    const animeOne = useRef(null);
-    const animeTwo = useRef(null);
-
-    useEffect(() => {
-        console.log("Inside useEffect");
-
-        const containerOne = document.getElementById('animationOne');
-        const containerTwo = document.getElementById('animationTwo');
-
-        if (animeOne.current) {
-            animeOne.current.destroy();
-        }
-
-        if (animeTwo.current) {
-            animeTwo.current.destroy();
-        }
-
-        console.log("Container One:", containerOne);
-        console.log("Container Two:", containerTwo);
-
-        animeOne.current = lottie.loadAnimation({
-            container: containerOne,
-            animationData: AnimationOne,
-            loop: true,
-            autoplay: true,
-            renderer: "svg",
-        });
-
-        animeTwo.current = lottie.loadAnimation({
-            container: containerTwo,
-            animationData: AnimationTwo,
-            loop: true,
-            autoplay: true,
-            renderer: "svg",
-        });
-
-        return () => {
-            if (animeOne.current) {
-                animeOne.current.destroy();
-            }
-            if (animeTwo.current) {
-                animeTwo.current.destroy();
-            }
-        };
-
-    }, []);
-
 
     return (
         <>
-            <section className='pt-[30px] md:pt-[70px] relative xl:h-[100vh]'>
+            <section className='pt-[30px] md:pt-[70px] relative bg-[#fbfbfb]'>
                 <div className="px-5 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12">
                         <div className="col-span-12">
@@ -77,10 +24,10 @@ const Extraordinary = () => {
                                 <div className="btns">
                                     <Link class="text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] w-[318px] md:w-[214px] h-[44px] shadow-2xl poppins flex items-center justify-center" href="javascript:;">Live Chat</Link>
                                 </div>
-                                <div className="flex items-center justify-between gap-x-4">
-                                    <div id="animationTwo" className='max-w-[170px] md:max-w-[400px] lg:max-w-[500px] 2xl:max-w-[600px] lg:mt-[55px]'></div> 
-                                    <div id="animationOne" className='max-w-[500px] 2xl:max-w-full lg:mt-[55px]'></div>
-                                </div> 
+                                <div className="flex items-center justify-between gap-x-4 mt-[48px] lg:mt-0">
+                                    <Image src={AnimationOne} alt='Animating Studio' width={550} height={550} className='w-5/12 lg:w-5/12' />
+                                    <Image src={AnimationTwo} alt='Animating Studio' width={550} height={550} className='lg:mb-[-110px] relative z-0 w-5/12 lg:w-5/12' />
+                                </div>
                             </div>
                         </div>
                     </div>

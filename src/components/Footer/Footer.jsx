@@ -146,7 +146,7 @@ const Footer = () => {
     ]
 
     return (
-        <footer className="bg-[#F3F3F3] pt-[70px] lg:mt-[110px] 3xl:mt-0">
+        <footer className="bg-[#F3F3F3] pt-[70px] 3xl:mt-0 relative z-[999]">
             <div className="px-5 lg:max-w-7xl mx-auto">
                 <div className="flex gap-x-5 pb-8 flex-wrap lg:flex-nowrap justify-between gap-y-5 lg:gap-y-0">
                     <div className="basis-full sm:basis-[55%] md:pr-[55px] lg:basis-[30%]">

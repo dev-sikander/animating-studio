@@ -1,19 +1,21 @@
-// Meta Data
+//===== Meta Data =====
 export const metadata = {
-    // Title & Descriptions
-    title: "WhiteBoard - Animation Studio",
-    description: "WhiteBoard - Animation Studio",
-    // Canonical
-    alternates: { canonical: 'https://animating-studio.vercel.app/whiteboard' },
-    // OG Metas
+    //===== Meta Tags =====
+    title: "WhiteBoard - Cloud Studios Inc",
+    description: "Learn more about the passionate team driving innovation, precision, and storytelling mastery in every animated frame.",
+    //===== OG Tags =====
     openGraph: {
-        title: 'WhiteBoard - Animation Studio',
-        description: 'WhiteBoard - Animation Studio',
-        url: 'https://animating-studio.vercel.app/whiteboard',
-        siteName: 'Animating Studio',
+        title: 'WhiteBoard - Cloud Studios Inc',
+        description: 'Learn more about the passionate team driving innovation, precision, and storytelling mastery in every animated frame.',
+        url: '/whiteboard',
+        siteName: 'Cloud Studios Inc',
         locale: 'en_US',
         type: 'website',
     },
+    //===== Canonical =====
+    alternates: { canonical: '/whiteboard' },
+    //===== GEO Tags =====
+    other: {},
 }
 
 export default function RootLayout({ children }) {

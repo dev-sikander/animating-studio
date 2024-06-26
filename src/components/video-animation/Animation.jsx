@@ -1,13 +1,11 @@
 "use client"
 
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 
-
-// swiper start
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import { Fancybox as NativeFancybox } from "@fancyapps/ui"
+import "@fancyapps/ui/dist/fancybox/fancybox.css"
 
 // Import Swiper styles
 import 'swiper/css';
@@ -18,15 +16,138 @@ import 'swiper/css/navigation';
 // ===== Images Start
 import Slide1 from "media/home/animate1.png"
 import Slide2 from "media/home/animate2.png"
-import Slide3 from "media/home/animate3.png"
+import Slide3 from "media/home/animate3.jpg"
 import Arrow from "media/home/slide-arrow.png"
 import VideoIco from "media/icons/play.png"
+import { register } from "swiper/element/bundle";
 
 const Animation = () => {
 
+    const swiperRef = useRef(null);
+    useEffect(() => {
+        register();
+        const params = {
+            grabCursor: true,
+            centeredSlides: true,
+            loop: true,
+            slidesPerView: typeof window !== 'undefined' && window.innerWidth >= 1200 ? 2 : 1,
+            navigation: true,
+            autoHeight: true,
+            coverflowEffect: {
+                rotate: -20,      
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false,
+            },
+            injectStyles: [
+                `
+                .swiper-3d .swiper-slide-shadow-left,
+                .swiper-3d .swiper-slide-shadow-right {
+                background-image: inherit !important;
+                }
+
+                .slider {
+                position: relative;
+                height: 100%;
+                }
+
+                .swiper-slide {
+                overflow: hidden;
+                }
+
+                .swiper-slide img {
+                object-fit: cover;
+                }
+
+                .arrow.arrow-left {
+                left: 0;
+                }
+
+                .arrow.arrow-right {
+                right: 0;
+                }
+
+                .swiper-pagination-bullets.swiper-pagination-horizontal {
+                position: absolute !important;
+                bottom: -60px !important;
+                top: inherit !important;
+                left: 50% !important;
+                right: 50% !important;
+                margin-left: 37px !important;
+                width: 8% !important;
+                /* background: black !important; */
+                transform: translateX(-50%) !important;
+                }
+
+                .swiper {
+                overflow: visible !important;
+                }
+
+                .swiper-pagination-bullet-active {
+                background: #f5090b !important;
+                width: 30px !important;
+                border-radius: 30px !important;
+                }
+
+                .swiper-button-prev {
+                    left: 47% !important;
+                    right: inherit !important;
+                }
+
+                .swiper-button-next {
+                left: inherit !important;
+                right: 46% !important;
+                }
+
+                .swiper-button-prev,
+                .swiper-button-next {
+                top: inherit !important;
+                bottom: -81px !important;
+                }
+
+                .swiper-button-prev:after {
+                content: url(/icons/swiper-left-arr.png) !important;
+                }
+
+                .swiper-button-next:after {
+                content: url(/icons/swiper-right-arrow.png) !important;
+                }
+
+                .swiper-slide{
+                border-radius: 45px !important;
+                }
+              `,
+            ],
+        };
+        // Assign it to swiper element
+        Object.assign(swiperRef.current, params);
+        // initialize swiper
+        swiperRef.current.initialize();
+    }, []);
+
+    function Fancybox(props) {
+        const containerRef = useRef(null);
+
+        useEffect(() => {
+            const container = containerRef.current;
+
+            const delegate = props.delegate || "[datafancybox]";
+            const options = props.options || {};
+
+            NativeFancybox.bind(container, delegate, options);
+
+            return () => {
+                NativeFancybox.unbind(container);
+                NativeFancybox.close();
+            };
+        });
+
+        return <div ref={containerRef}>{props.children}</div>;
+    }
     return (
         <>
-            <section className='pt-[40px] md:pt-[70px] pb-[30px] lg:pb-[120px] relative'>
+            <section className='pt-[40px] md:pt-[70px] pb-[30px] lg:pb-[175px] relative'>
                 <div className="px-5 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12">
                         <div className="col-span-12">
@@ -38,98 +159,144 @@ const Animation = () => {
                     </div>
                 </div>
                 <div className="slider mt-4 sm:mt-7 lg:mt-12 px-4 xl:px-0 h-[200%]">
-                    <Swiper
+                    <swiper-container ref={swiperRef} init={false}
                         effect={'coverflow'}
-                        grabCursor={true}
-                        centeredSlides={true}
-                        loop={true}
-                        arrows={true}
-                        slidesPerView={typeof window !== 'undefined' && window.innerWidth >= 1200 ? 2 : 1}
-                        navigation={true}
-                        autoHeight={true}
-                        pagination={{ clickable: true, dynamicBullets: true }}
-                        coverflowEffect={{
-                            rotate: -20,      // Set the rotation angle
-                            stretch: 0,
-                            depth: 100,
-                            modifier: 1,
-                            slideShadows: true,
-                        }}
-                        modules={[EffectCoverflow, Pagination, Navigation]}
-                        className="mySwiper" >
-                        <SwiperSlide className='relative pt-4'>
-                            <Image src={Slide1} alt='Slide' className='rounded-[30px] w-full relative top-0 left-0' />
-                            <div className="absolute bottom-[2px] left-0 w-full h-[96%] 3xl:h-[97%] flex items-start justify-end flex-col bg-black/40 rounded-[30px] px-[40px] pb-[40px]">
-                                <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Video Animation Services</h3>
-                                <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>We can add that vividness, vibrancy, and a strong taste of zestfulness to those mundane corporate videos, making your brand truly stand out.</p>
+                        className="videoExplainerSlider"
+                    >
+                        <swiper-slide className='relative pt-4'>
+                            <Fancybox options={{
+                                Carousel: {
+                                    infinite: false,
+                                },
+                            }}>
+                                <div>
+                                    <Link href="https://player.vimeo.com/progressive_redirect/playback/947422905/rendition/1080p/file.mp4?loc=external&signature=f56596bad42e22dfbb5dcf417293fe4f92f3fc7e84a9464be5c8f07f903eaa05" datafancybox="gallery">
+                                        <Image src={Slide1} alt='Slide' className='rounded-[50px] w-full relative top-0 left-0' />
+                                        <div className="absolute bottom-[2px] left-0 w-full h-full flex items-start justify-end flex-col bg-black/40 rounded-[50px] px-[40px] pb-[40px]">
+                                            <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">3D Animation Services</h3>
+                                            <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>Our 3D animation services are not just visuals; they're an immersive experience that propels your brand into the future. Our skilled team of 3D artists and visionaries transform concepts into living, breathing narratives that captivate audiences.</p>
 
-                                <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
-                                    <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
-                                </Link>
-                                <Image src={VideoIco} alt='video-icon' className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] md:block hidden' />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide className='relative pt-4'>
-                            <Image src={Slide2} alt='Slide' className='rounded-[30px] w-full relative top-0 left-0' />
-                            <div className="absolute bottom-[2px] left-0 w-full h-[96%] 3xl:h-[97%] flex items-start justify-end flex-col bg-black/40 rounded-[30px] px-[40px] pb-[40px]">
-                                <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Explainer Videos Services</h3>
-                                <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>We like to explain things, but it’s not just that…we want your audience to enjoy the seeing and listening experience as well with our explainer videos.</p>
+                                            <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
+                                                <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
+                                            </Link>
+                                            <Image src={VideoIco} alt='video-icon' className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] md:block hidden' />
+                                        </div>
+                                    </Link>
+                                </div>
+                            </Fancybox>
+                        </swiper-slide>
+                        <swiper-slide className='relative pt-4'>
+                            <Fancybox options={{
+                                Carousel: {
+                                    infinite: false,
+                                },
+                            }}>
+                                <div>
+                                    <Link href="https://player.vimeo.com/progressive_redirect/playback/957421481/rendition/1080p/file.mp4?loc=external&signature=2200951cfd824565a3f569c81e997b1f7c5ad0a443debd2bc4d73ff7a3b0f27b" datafancybox="gallery">
+                                        <Image src={Slide2} alt='Slide' className='rounded-[50px] w-full relative top-0 left-0' />
+                                        <div className="absolute bottom-[2px] left-0 w-full h-full flex items-start justify-end flex-col bg-black/40 rounded-[50px] px-[40px] pb-[40px]">
+                                            <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Cel Animation Services</h3>
+                                            <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>With Cel Animation, we seamlessly merge traditional hand-drawn Cel animation techniques with cutting-edge digital elements. This dynamic fusion results in visuals that not only pay homage to the timeless charm of Cel animation but also push the boundaries of innovation.</p>
 
-                                <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
-                                    <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
-                                </Link>
-                                <Image src={VideoIco} alt='video-icon' className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] md:block hidden' />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide className='relative pt-4'>
-                            <Image src={Slide3} alt='Slide' className='rounded-[30px] w-full relative top-0 left-0' />
-                            <div className="absolute bottom-[2px] left-0 w-full h-[96%] 3xl:h-[97%] flex items-start justify-end flex-col bg-black/40 rounded-[30px] px-[40px] pb-[40px]">
-                                <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Whiteboard Animation Services</h3>
-                                <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>A whiteboard is a wonderful blank space to start or unleash creativity. Well, truth be told, we don’t view a whiteboard as a whiteboard, we view it as a canvas that can be splendidly colored.</p>
+                                            <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
+                                                <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
+                                            </Link>
+                                            <Image src={VideoIco} alt='video-icon' className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] md:block hidden' />
+                                        </div>
+                                    </Link>
+                                </div>
+                            </Fancybox>
+                        </swiper-slide>
+                        <swiper-slide className='relative pt-4'>
+                            <Fancybox options={{
+                                Carousel: {
+                                    infinite: false,
+                                },
+                            }}>
+                                <div>
+                                    <Link href="https://player.vimeo.com/progressive_redirect/playback/923043536/rendition/1080p/file.mp4?loc=external&signature=65ba4de21993e2ab518a0dbad0e015b2bd960e70967b63241c8509cc1f8c5390" datafancybox="gallery">
+                                        <Image src={Slide3} alt='Slide' className='rounded-[50px] w-full relative top-0 left-0' />
+                                        <div className="absolute bottom-[2px] left-0 w-full h-full flex items-start justify-end flex-col bg-black/40 rounded-[50px] px-[40px] pb-[40px]">
+                                            <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Architectural Visualization Services</h3>
+                                            <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>At the intersection of innovation and aesthetics, our Architectural Visualization Services go beyond rendering structures; they create visual stories that resonate. Whether it's a residential project, commercial space, or urban development.</p>
 
-                                <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
-                                    <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
-                                </Link>
-                                <Image src={VideoIco} alt='video-icon' className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] md:block hidden' />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide className='relative pt-4'>
-                            <Image src={Slide1} alt='Slide' className='rounded-[30px] w-full relative top-0 left-0' />
-                            <div className="absolute bottom-[2px] left-0 w-full h-[96%] 3xl:h-[97%] flex items-start justify-end flex-col bg-black/40 rounded-[30px] px-[40px] pb-[40px]">
-                                <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Video Animation Services</h3>
-                                <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>We can add that vividness, vibrancy, and a strong taste of zestfulness to those mundane corporate videos, making your brand truly stand out.</p>
+                                            <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
+                                                <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
+                                            </Link>
+                                            <Image src={VideoIco} alt='video-icon' className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] md:block hidden' />
+                                        </div>
+                                    </Link>
+                                </div>
+                            </Fancybox>
+                        </swiper-slide>
+                        <swiper-slide className='relative pt-4'>
+                            <Fancybox options={{
+                                Carousel: {
+                                    infinite: false,
+                                },
+                            }}>
+                                <div>
+                                    <Link
+                                        href="https://player.vimeo.com/progressive_redirect/playback/947422905/rendition/1080p/file.mp4?loc=external&signature=f56596bad42e22dfbb5dcf417293fe4f92f3fc7e84a9464be5c8f07f903eaa05" datafancybox="gallery">
+                                        <Image src={Slide1} alt='Slide' className='rounded-[50px] w-full relative top-0 left-0' />
+                                        <div className="absolute bottom-[2px] left-0 w-full h-full flex items-start justify-end flex-col bg-black/40 rounded-[50px] px-[40px] pb-[40px]">
+                                            <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">3D Animation Services</h3>
+                                            <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>Our 3D animation services are not just visuals; they're an immersive experience that propels your brand into the future. Our skilled team of 3D artists and visionaries transform concepts into living, breathing narratives that captivate audiences.</p>
 
-                                <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
-                                    <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
-                                </Link>
-                                <Image src={VideoIco} alt='video-icon' className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] md:block hidden' />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide className='relative pt-4'>
-                            <Image src={Slide2} alt='Slide' className='rounded-[30px] w-full relative top-0 left-0' />
-                            <div className="absolute bottom-[2px] left-0 w-full h-[96%] 3xl:h-[97%] flex items-start justify-end flex-col bg-black/40 rounded-[30px] px-[40px] pb-[40px]">
-                                <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Explainer Videos Services</h3>
-                                <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>We like to explain things, but it’s not just that…we want your audience to enjoy the seeing and listening experience as well with our explainer videos.</p>
+                                            <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
+                                                <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
+                                            </Link>
+                                            <Image src={VideoIco} alt='video-icon' className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] md:block hidden' />
+                                        </div>
+                                    </Link>
+                                </div>
+                            </Fancybox>
+                        </swiper-slide>
+                        <swiper-slide className='relative pt-4'>
+                            <Fancybox options={{
+                                Carousel: {
+                                    infinite: false,
+                                },
+                            }}>
+                                <div>
+                                    <Link href="https://player.vimeo.com/progressive_redirect/playback/957421481/rendition/1080p/file.mp4?loc=external&signature=2200951cfd824565a3f569c81e997b1f7c5ad0a443debd2bc4d73ff7a3b0f27b" datafancybox="gallery">
+                                        <Image src={Slide2} alt='Slide' className='rounded-[50px] w-full relative top-0 left-0' />
+                                        <div className="absolute bottom-[2px] left-0 w-full h-full flex items-start justify-end flex-col bg-black/40 rounded-[50px] px-[40px] pb-[40px]">
+                                            <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Cel Animation Services</h3>
+                                            <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>With Cel Animation, we seamlessly merge traditional hand-drawn Cel animation techniques with cutting-edge digital elements. This dynamic fusion results in visuals that not only pay homage to the timeless charm of Cel animation but also push the boundaries of innovation.</p>
 
-                                <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
-                                    <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
-                                </Link>
-                                <Image src={VideoIco} alt='video-icon' className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] md:block hidden' />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide className='relative pt-4'>
-                            <Image src={Slide3} alt='Slide' className='rounded-[30px] w-full relative top-0 left-0' />
-                            <div className="absolute bottom-[2px] left-0 w-full h-[96%] 3xl:h-[97%] flex items-start justify-end flex-col bg-black/40 rounded-[30px] px-[40px] pb-[40px]">
-                                <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Whiteboard Animation Services</h3>
-                                <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>A whiteboard is a wonderful blank space to start or unleash creativity. Well, truth be told, we don’t view a whiteboard as a whiteboard, we view it as a canvas that can be splendidly colored.</p>
+                                            <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
+                                                <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
+                                            </Link>
+                                            <Image src={VideoIco} alt='video-icon' className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] md:block hidden' />
+                                        </div>
+                                    </Link>
+                                </div>
+                            </Fancybox>
+                        </swiper-slide>
+                        <swiper-slide className='relative pt-4'>
+                            <Fancybox options={{
+                                Carousel: {
+                                    infinite: false,
+                                },
+                            }}>
+                                <div>
+                                    <Link href="https://player.vimeo.com/progressive_redirect/playback/923043536/rendition/1080p/file.mp4?loc=external&signature=65ba4de21993e2ab518a0dbad0e015b2bd960e70967b63241c8509cc1f8c5390" datafancybox="gallery">
+                                        <Image src={Slide3} alt='Slide' className='rounded-[50px] w-full relative top-0 left-0' />
+                                        <div className="absolute bottom-[2px] left-0 w-full h-full flex items-start justify-end flex-col bg-black/40 rounded-[50px] px-[40px] pb-[40px]">
+                                            <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Architectural Visualization Services</h3>
+                                            <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>At the intersection of innovation and aesthetics, our Architectural Visualization Services go beyond rendering structures; they create visual stories that resonate. Whether it's a residential project, commercial space, or urban development.</p>
 
-                                <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
-                                    <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
-                                </Link>
-                                <Image src={VideoIco} alt='video-icon' className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] md:block hidden' />
-                            </div>
-                        </SwiperSlide>
-                    </Swiper>
+                                            <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
+                                                <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
+                                            </Link>
+                                            <Image src={VideoIco} alt='video-icon' className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] md:block hidden' />
+                                        </div>
+                                    </Link>
+                                </div>
+                            </Fancybox>
+                        </swiper-slide>
+                    </swiper-container>
                 </div>
             </section>
         </>

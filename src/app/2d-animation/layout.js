@@ -1,19 +1,21 @@
-// Meta Data
+//===== Meta Data =====
 export const metadata = {
-    // Title & Descriptions
-    title: "2d Animation - Animation Studio",
-    description: "2d Animation - Animation Studio",
-    // Canonical
-    alternates: { canonical: 'https://animating-studio.vercel.app/2d-animation' },
-    // OG Metas
+    //===== Meta Tags =====
+    title: "2d Animations - Cloud Studios Inc",
+    description: "Learn more about the passionate team driving innovation, precision, and storytelling mastery in every animated frame.",
+    //===== OG Tags =====
     openGraph: {
-        title: '2d Animation - Animation Studio',
-        description: '2d Animation - Animation Studio',
-        url: 'https://animating-studio.vercel.app/2d-animation',
-        siteName: 'Animating Studio',
+        title: '2d Animations - Cloud Studios Inc',
+        description: 'Learn more about the passionate team driving innovation, precision, and storytelling mastery in every animated frame.',
+        url: '/2d-animation',
+        siteName: 'Cloud Studios Inc',
         locale: 'en_US',
         type: 'website',
     },
+    //===== Canonical =====
+    alternates: { canonical: '/2d-animation' },
+    //===== GEO Tags =====
+    other: {},
 }
 
 export default function RootLayout({ children }) {

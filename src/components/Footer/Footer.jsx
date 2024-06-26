@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 // Import Images
-import logo from "media/logo.png"
+import logo from "media/logo.webp"
 import facebook from "media/icons/fb.png";
 import twitter from "media/icons/twitter.png";
 import instagram from "media/icons/insta.png";
@@ -151,9 +151,9 @@ const Footer = () => {
                 <div className="flex gap-x-5 pb-8 flex-wrap lg:flex-nowrap justify-between gap-y-5 lg:gap-y-0">
                     <div className="basis-full sm:basis-[55%] md:pr-[55px] lg:basis-[30%]">
                         <Link href="/">
-                            <Image src={logo} width={263} height={40} className="pb-3" alt="Animation Studio" />
+                            <Image src={logo} width={263} height={40} className="pb-3" alt="Cloud Studios Inc" />
                         </Link>
-                        <p className="text-[16px] poppins text-justify text-black mt-3 md:pr-5 pb-10">Animating Studio is a visionary kingdom where creativity knows no bounds. With masterful strokes of artistry, they breathe life into ideas, forging appealing animations that dance with imagination.</p>
+                        <p className="text-[16px] poppins text-justify text-black mt-3 md:pr-5 pb-10">Cloud Studios Inc is a visionary kingdom where creativity knows no bounds. With masterful strokes of artistry, they breathe life into ideas, forging appealing animations that dance with imagination.</p>
 
                         <hr className="border-black " />
 
@@ -163,7 +163,7 @@ const Footer = () => {
                                     return (
                                         <li key={i} className="">
                                             <Link href={e.link} target="_blank">
-                                                <Image src={e.icon} className="w-[20px] brightness-0 " alt="Animation Studio" />
+                                                <Image src={e.icon} className="w-[20px] brightness-0 " alt="Cloud Studios Inc" />
                                             </Link>
                                         </li>
                                     );
@@ -223,7 +223,7 @@ const Footer = () => {
                 <div className="flex gap-x-5 py-5 flex-wrap sm:flex-nowrap gap-y-2 sm:gap-y-0 items-center border-t border-[#000000]">
                     <div className="basis-full sm:basis-1/2">
                         <p className="text-sm poppins text-black leading-6 text-center sm:text-left">
-                            © Copyright 2024 - Animation Studio
+                            © Copyright 2024 - Cloud Studios Inc
                         </p>
                     </div>
                     <div className="basis-full sm:basis-1/2">

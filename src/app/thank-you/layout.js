@@ -1,19 +1,21 @@
-// Meta Data
+//===== Meta Data =====
 export const metadata = {
-    // Title & Descriptions
-    title: "Thank You - Animating Studio",
-    description: "Learn more about the passionate team driving innovation, precision, and storytelling mastery in every animated frame. ",
-    // Canonical
-    alternates: { canonical: 'https://infinity-animation.vercel.app/thank-you/' },
-    // OG Metas
+    //===== Meta Tags =====
+    title: "Thank You - Cloud Studios Inc",
+    description: "Learn more about the passionate team driving innovation, precision, and storytelling mastery in every animated frame.",
+    //===== OG Tags =====
     openGraph: {
-        title: 'Thank You - Animating Studio',
-        description: 'Learn more about the passionate team driving innovation, precision, and storytelling mastery in every animated frame. ',
-        url: 'https://infinity-animation.vercel.app/thank-you/',
-        siteName: 'Animating Studio',
+        title: 'Thank You - Cloud Studios Inc',
+        description: 'Learn more about the passionate team driving innovation, precision, and storytelling mastery in every animated frame.',
+        url: '/thank-you',
+        siteName: 'Cloud Studios Inc',
         locale: 'en_US',
         type: 'website',
     },
+    //===== Canonical =====
+    alternates: { canonical: '/thank-you' },
+    //===== GEO Tags =====
+    other: {},
 }
 
 export default function RootLayout({ children }) {

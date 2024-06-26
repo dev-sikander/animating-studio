@@ -10,14 +10,14 @@ export async function POST(request) {
             port: 465,
             secure: true,
             auth: {
-                user: "leads@infinityanimations.com",
+                user: "harrykennedy.cs@gmail.com",
                 pass: "10@Kskwoks"
             }
         });
         const mailOptions = {
-            from: "leads@infinityanimations.com",
+            from: "harrykennedy.cs@gmail.com",
             to: "harrykennedy.cs@gmail.com",
-            subject: `Animating Studio Lead`,
+            subject: `Cloud Studios Inc Lead`,
             html: `
             <table>
                 <tr>

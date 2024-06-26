@@ -1,19 +1,21 @@
-// Meta Data
+//===== Meta Data =====
 export const metadata = {
-    // Title & Descriptions
-    title: "Promotional Videos - Animation Studio",
-    description: "Promotional Videos - Animation Studio",
-    // Canonical
-    alternates: { canonical: 'https://animating-studio.vercel.app/promotional-videos' },
-    // OG Metas
+    //===== Meta Tags =====
+    title: "Promotional Videos - Cloud Studios Inc",
+    description: "Learn more about the passionate team driving innovation, precision, and storytelling mastery in every animated frame.",
+    //===== OG Tags =====
     openGraph: {
-        title: 'Promotional Videos - Animation Studio',
-        description: 'Promotional Videos - Animation Studio',
-        url: 'https://animating-studio.vercel.app/promotional-videos',
-        siteName: 'Animating Studio',
+        title: 'Promotional Videos - Cloud Studios Inc',
+        description: 'Learn more about the passionate team driving innovation, precision, and storytelling mastery in every animated frame.',
+        url: '/promotional-videos',
+        siteName: 'Cloud Studios Inc',
         locale: 'en_US',
         type: 'website',
     },
+    //===== Canonical =====
+    alternates: { canonical: '/promotional-videos' },
+    //===== GEO Tags =====
+    other: {},
 }
 
 export default function RootLayout({ children }) {

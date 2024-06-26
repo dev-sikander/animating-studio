@@ -25,8 +25,8 @@ const Extraordinary = () => {
                                     <Link class="text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] w-[318px] md:w-[214px] h-[44px] shadow-2xl poppins flex items-center justify-center" href="javascript:;">Live Chat</Link>
                                 </div>
                                 <div className="flex items-center justify-between gap-x-4 mt-[48px] lg:mt-0">
-                                    <Image src={AnimationOne} alt='Animating Studio' width={550} height={550} className='w-5/12 lg:w-5/12' />
-                                    <Image src={AnimationTwo} alt='Animating Studio' width={550} height={550} className='lg:mb-[-110px] relative z-0 w-5/12 lg:w-5/12' />
+                                    <Image src={AnimationOne} alt='Cloud Studios Inc' width={550} height={550} className='w-5/12 lg:w-5/12' />
+                                    <Image src={AnimationTwo} alt='Cloud Studios Inc' width={550} height={550} className='lg:mb-[-110px] relative z-0 w-5/12 lg:w-5/12' />
                                 </div>
                             </div>
                         </div>

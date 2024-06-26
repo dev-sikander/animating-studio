@@ -29,7 +29,7 @@ import {
     UserGroupIcon,
 } from "@heroicons/react/24/solid";
 // Import Images
-import logo from "media/logo.png";
+import logo from "media/logo.webp";
 
 const megaMenuItems = [
     {
@@ -223,8 +223,8 @@ const Header = () => {
                         >
                             <Image
                                 src={logo}
-                                className="w-[60%] sm:w-[80%] md:w-auto"
-                                alt="Animating Studio"
+                                className="w-[60%] sm:w-[80%]"
+                                alt="Cloud Studios Inc"
                             />
                         </Typography>
                         <div className="hidden lg:block">
@@ -232,13 +232,13 @@ const Header = () => {
                         </div>
                         <div className="lg:flex hidden items-center gap-x-7">
                             <div className="">
-                                <Link
-                                    href="tel:;"
+                                <a
+                                    href="tel:833-666-6684"
                                     className="flex items-center gap-x-3 text-primary-100 poppins font-semibold text-[15px]"
                                 >
                                     <FaPhoneAlt className="text-[15px]" />
-                                    123 456 7890
-                                </Link>
+                                    833-666-6684
+                                </a>
                             </div>
                             <div className="lg:block hidden">
                                 <Link
@@ -251,13 +251,13 @@ const Header = () => {
                         </div>
                         <div className="xl:hidden flex items-center gap-x-3">
                             <div className="">
-                                <Link
-                                    href="tel:;"
+                                <a
+                                    href="tel:833-666-6684"
                                     className="flex items-center gap-x-3 text-primary-100 poppins font-semibold text-[13px] sm:text-[15px]"
                                 >
                                     <FaPhoneAlt className="text-[15px] sm:block hidden" />
-                                    123 456 7890
-                                </Link>
+                                    833-666-6684
+                                </a>
                             </div>
                             <button
                                 onClick={() => setOpenNav(!openNav)}
